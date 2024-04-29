@@ -11,7 +11,7 @@ const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-mont' });
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} font-mont bg-light w-full min-h-screen`}>
+      <body className={`${montserrat.className} font-mont bg-light w-full min-h-screen dark:bg-dark`}>
       <NavBar/>
         {children}
         <Footer/>
