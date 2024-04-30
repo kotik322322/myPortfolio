@@ -16,7 +16,7 @@ const NavBar = () => {
     setDarkSide(checked);
   };
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light">
       <nav className="flex items-center justify-center gap-x-4">
         <CustomLink href="/" title="Home" />
         <CustomLink href="/about" title="About" />
@@ -51,8 +51,7 @@ const NavBar = () => {
 
         <button
           onClick={() => toggleDarkMode(darkSide)}
-          // onClick={toggleDarkMode}
-          className="ml-3 flex items-center justify-center rounded-full p-1">
+          className={`ml-3 flex items-center justify-center rounded-full p-1 ${colorTheme === "light" ? "bg-light text-dark" : "bg-dark text-light"}`}>
           {colorTheme === 'dark' ? (
             <SunIcon className="fill-dark" />
           ) : (
