@@ -28,23 +28,39 @@ const config: Config = {
       circularDark: "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 5px, #1b1b1b 100px)"
      }, 
      screens: {
-      "2xl": { max: "1535px" },
-      // => @media (max-width: 1535px) { ... }
+      // "2xl": { max: "1535px" },
+      // // => @media (max-width: 1535px) { ... }
   
-      xl: { max: "1279px" },
-      // => @media (max-width: 1279px) { ... }
+      // xl: { max: "1279px" },
+      // // => @media (max-width: 1279px) { ... }
   
-      lg: { max: "1023px" },
-      // => @media (max-width: 1023px) { ... }
+      // lg: { max: "1023px" },
+      // // => @media (max-width: 1023px) { ... }
   
-      md: { max: "767px" },
-      // => @media (max-width: 767px) { ... }
+      // md: { max: "767px" },
+      // // => @media (max-width: 767px) { ... }
   
-      sm: { max: "639px" },
-      // => @media (max-width: 639px) { ... }
+      // sm: { max: "639px" },
+      // // => @media (max-width: 639px) { ... }
   
-      xs: { max: "479px" },
+      // xs: { max: "479px" },
+      // // => @media (max-width: 479px) { ... }
+      "xs": "480px",
       // => @media (max-width: 479px) { ... }
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
   },
     },
   },
