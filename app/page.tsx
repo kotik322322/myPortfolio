@@ -24,17 +24,17 @@ export default function Home() {
             />
           </div>
 
-          <div className="w-full flex flex-col items-center self-center text-center lg:text-left lg:w-1/2">
+          <div className="w-full flex flex-col items-center justify-center text-center lg:text-left lg:w-1/2">
             <AnimatedText
               text="Turning Vision Into Reality with Code"
               className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:text-left"
             />
-            <p className="my-4 font-medium md:text-sm text-xs xl:text-base ">
+            <p className="my-4 font-medium text-xs md:text-sm xl:text-base ">
               As a skilled Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus sequi
               iure ipsam optio fugit?
             </p>
 
-            <div className="w-full flex items-center justify-start mt-2 ">
+            <div className="w-full flex items-center justify-center lg:justify-start mt-2 ">
               <Link
                 href="/resume.pdf"
                 target="_blank"

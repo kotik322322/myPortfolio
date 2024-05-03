@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} font-mont bg-light w-full min-h-screen dark:bg-dark`}>
+        className={`${montserrat.className} font-medium bg-light w-full min-h-screen dark:bg-dark`}>
         <Script id="theme-switcher" strategy="beforeInteractive">
           {`if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
           document.documentElement.classList.add('dark')
@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           document.documentElement.classList.remove('dark')
           }`}
         </Script>
-        {/* <NavBar /> */}
+        <NavBar />
         {children}
         {/* <Footer /> */}
       </body>
