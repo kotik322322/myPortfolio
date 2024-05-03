@@ -19,9 +19,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           document.documentElement.classList.remove('dark')
           }`}
         </Script>
-        <NavBar />
+        {/* <NavBar /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
