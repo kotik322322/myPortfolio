@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GithubIcon, LinkedInIcon, TwitterIcon } from './Icons';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
 import DarkThemeButton from './DarkThemeButton';
 import CustomMobileLink from './CustomMobileLink';
 
@@ -17,22 +18,22 @@ const BurgerMenu : React.FC<BurgerMenuProps> = ({ toggleMenu }) => {
         <CustomMobileLink href="/projects" title="Projects" toggleMenu={toggleMenu} />
         <CustomMobileLink href="/contacts" title="Contacts" toggleMenu={toggleMenu} />
       </nav>
-      <nav className="flex items-center justify-center gap-x-4 mt-4">
+      <nav className="flex items-center justify-center gap-x-1 md:gap-x-4 mt-4">
         <motion.a
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
           href="/"
           target={'_blank'}>
-          <TwitterIcon />
+          <FaInstagram className='text-3xl text-orange-600'/>
         </motion.a>
         <motion.a
           href="/"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-6 mx-3 bg-light rounded-full dark:bg-dark"
+          className=""
           target={'_blank'}>
-          <GithubIcon />
+          <FaGithub className="text-3xl text-dark bg-light rounded-full p-1"/>
         </motion.a>
         <motion.a
           href="/"
@@ -40,7 +41,7 @@ const BurgerMenu : React.FC<BurgerMenuProps> = ({ toggleMenu }) => {
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
           target={'_blank'}>
-          <LinkedInIcon />
+          <FaLinkedin  className='text-3xl text-blue-600'/>
         </motion.a>
 
         <DarkThemeButton />

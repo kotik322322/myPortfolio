@@ -1,14 +1,12 @@
 import React from 'react';
 import { CustomLink } from './CustomLink';
 import { motion } from 'framer-motion';
-
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
+import { GithubIcon, LinkedInIcon, TwitterIcon } from './Icons';
 import DarkThemeButton from './DarkThemeButton';
 
-const NavList = () => {
+const BurgerMenuContent = () => {
   return (
-    <div className="hidden w-full lg:flex justify-between items-center  ">
+    <div className="hidden w-full xl:flex justify-between items-center  ">
       <nav className="flex items-center justify-center gap-x-4">
         <CustomLink href="/" title="Home" />
         <CustomLink href="/about" title="About" />
@@ -22,7 +20,7 @@ const NavList = () => {
           className="w-6"
           href="/"
           target={'_blank'}>
-          <FaInstagram className='text-2xl text-orange-600'/>
+          <TwitterIcon />
         </motion.a>
         <motion.a
           href="/"
@@ -30,7 +28,7 @@ const NavList = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6"
           target={'_blank'}>
-          <FaGithub className="text-2xl text-dark bg-light rounded-full p-1"/>
+          <GithubIcon />
         </motion.a>
         <motion.a
           href="/"
@@ -38,7 +36,7 @@ const NavList = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6"
           target={'_blank'}>
-          <FaLinkedin  className='text-2xl text-blue-600'/>
+          <LinkedInIcon />
         </motion.a>
 
         <DarkThemeButton />
@@ -47,4 +45,4 @@ const NavList = () => {
   );
 };
 
-export default NavList;
+export default BurgerMenuContent;

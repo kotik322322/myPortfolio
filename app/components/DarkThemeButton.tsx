@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
-import { MoonIcon, SunIcon } from './Icons';
+import { FaMoon } from "react-icons/fa";
+import { MdOutlineWbSunny } from "react-icons/md";
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 const DarkThemeButton = () => {
@@ -14,13 +15,13 @@ const DarkThemeButton = () => {
   return (
     <button
     onClick={() => toggleDarkMode(darkSide)}
-    className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+    className={`flex items-center justify-center rounded-full ${
       colorTheme === 'light' ? 'bg-light text-dark' : 'bg-dark text-light'
     }`}>
     {colorTheme === 'dark' ? (
-      <SunIcon className="fill-dark" />
+      <MdOutlineWbSunny className="text-3xl text-dark bg-light rounded-full p-1 border-1.5 border-black" />
     ) : (
-      <MoonIcon className="fill-dark" />
+      <FaMoon className="text-3xl text-light bg-dark rounded-full p-1 border-1.5 border-light" />
     )}
   </button>
   )
