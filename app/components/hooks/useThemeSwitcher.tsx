@@ -1,8 +1,9 @@
-import React, { useEffect, useState, SetStateAction, Dispatch } from 'react';
-
+"use client";
+import { useEffect, useState, SetStateAction, Dispatch } from 'react';
 
 const useThemeSwitcher = (): [string, Dispatch<SetStateAction<string>>] => {
-  const [theme, setTheme] = useState<string>(localStorage.theme);
+  const storage = typeof window !== 'undefined' ? localStorage.theme : 'light';
+  const [theme, setTheme] = useState<string>(storage);
   const colorTheme = theme === 'dark' ? 'light' : 'dark';
 
   useEffect(() => {
