@@ -43,7 +43,7 @@ const AnimatedText = ({ text, className }: AnimatedTextProps) => {
         animate="animate"
         className={`inline-block w-full text-dark font-bold capitalize ${className} dark:text-light`}>
         {text.split(' ').map((word: string, index: number) => (
-          <motion.span variants={singleWord} key={word + '-' + index} className="inline-block">
+          <motion.span variants={singleWord} key={word + '-' + index} className="inline-block text-4xl">
             {word}&nbsp;
           </motion.span>
         ))}

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Layout from './components/Layout';
-import profileImg from '../public/images/devpic.png';
+import profileImg from '../public/images/devpic1.jpg';
 import AnimatedText from './components/AnimatedText';
 import Link from 'next/link';
 import { LinkArrow } from './components/Icons';
