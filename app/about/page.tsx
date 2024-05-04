@@ -106,7 +106,7 @@ const AboutPage = () => {
           </div>
 
           <Skills />
-          {/* <Experience /> */}
+          <Experience />
         </Layout>
       </main>
     </div>
