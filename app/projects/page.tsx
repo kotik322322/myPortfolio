@@ -11,7 +11,7 @@ const Projects = () => {
       <Layout className="pt-16">
         <AnimatedText text="Imagination Trumps Knowledge!" className="mb-10" />
 
-        <div className="grid grid-cols12 gap-24 gap-y-32">
+        <div className="grid grid-cols-12 gap-24 gap-x-0 lg:gap-x-16">
           <div className="col-span-12">
             <FeaturedProject
               title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum."
@@ -23,22 +23,22 @@ const Projects = () => {
             />
           </div>
 
-          <div className="col-span-6">
+          <div className="col-span-12 lg:col-span-6">
             <Project
               title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum."
               summary="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum."
               link={'/link'}
-              type={'Featured Project'}
+              type={'Website'}
               img={project1}
               github={'https://github.com/kotik322322/next-nike-v2'}
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-12 lg:col-span-6">
             <Project
               title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum."
               summary="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum."
               link={'/link'}
-              type={'Featured Project'}
+              type={'Website'}
               img={project1}
               github={'https://github.com/kotik322322/next-nike-v2'}
             />

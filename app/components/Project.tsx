@@ -34,18 +34,18 @@ const Project = ({ title, type, summary, img, link, github }: ProjectProps) => {
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark">{type}</span>
+        <span className="text-primary font-medium text-base lg:text-xl dark:text-primaryDark">{type}</span>
         <Link href={link} target="_blank" className="hover:bg:underline underline-offset-2">
-          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-lg lg:text-4xl font-semibold lg:font-bold dark:text-light">{title}</h2>
         </Link>
-        <p className="my-2 font-medium text-dark">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light text-sm lg:text-base">{summary}</p>
 
         <div className="w-full mt-2 flex items-center justify-between">
           <Link href={link} target="_blank" className="text-lg font-semibold underline">
             Visit
           </Link>
-          <Link href={github} target="_blank" className="w-8">
-            <GithubIcon />
+          <Link href={github} target="_blank" className="hover:-translate-y-1 transition-all duration-200">
+            <GithubIcon className='text-3xl '/>
           </Link>
         </div>
       </div>
