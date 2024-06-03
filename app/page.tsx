@@ -23,14 +23,21 @@ export default function Home() {
               text="Transforming Ideas into Innovative Solutions with Code"
               className="text-2xl md:text-5xl lg:text-6xl "
             />
-            <p className="text-left font-medium text-sm xl:text-base ">
+            <p className="text-left font-semibold text-sm xl:text-base ">
               Hello! My name is Konstantin, and I am a frontend developer with a deep passion for
               creating modern and high-quality web applications. My core tech stack includes React,
-              Next.js, Redux Toolkit, and TailwindCSS. Throughout my career, I have accumulated
-              significant experience in developing dynamic and responsive user interfaces, ensuring
-              an excellent user experience and optimal application performance. I strive to apply
-              best development practices and continuously update my knowledge of new technologies
-              and tools
+              Next.js, Redux Toolkit, and TailwindCSS.
+            </p>
+
+            <p className="text-left font-semibold text-sm xl:text-base mt-3">
+              Throughout my career, I have accumulated significant experience in developing dynamic
+              and responsive user interfaces, ensuring an excellent user experience and optimal
+              application performance.
+            </p>
+
+            <p className="text-left font-semibold text-sm xl:text-base mt-3">
+              I strive to apply best development practices and continuously update my knowledge of
+              new technologies and tools
             </p>
           </div>
           {/* =====Text===== */}
