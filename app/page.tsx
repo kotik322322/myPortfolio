@@ -7,9 +7,9 @@ import { LinkArrow } from './components/Icons';
 
 export default function Home() {
   return (
-    <main className="flex items-center text-dark w-full min-h-screen dark:text-light ">
+    <main className="flex items-center text-dark w-full  dark:text-light ">
       <Layout>
-        <div className="flex flex-col items-center justify-between gap-y-4 my-4 w-full lg:flex-row lg:gap-x-20">
+        <div className="flex flex-col items-center justify-between gap-y-5 my-5 w-full lg:flex-row lg:gap-x-20">
           {/* Image */}
           <div className="w-full relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-3 lg:p-8 dark:bg-dark dark:border-light ">
             <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
@@ -23,22 +23,7 @@ export default function Home() {
               text="Transforming Ideas into Innovative Solutions with Code"
               className="text-2xl md:text-5xl lg:text-6xl "
             />
-            <p className="text-left font-semibold text-sm xl:text-base ">
-              Hello! My name is Konstantin, and I am a frontend developer with a deep passion for
-              creating modern and high-quality web applications. My core tech stack includes React,
-              Next.js, Redux Toolkit, and TailwindCSS.
-            </p>
 
-            <p className="text-left font-semibold text-sm xl:text-base mt-3">
-              Throughout my career, I have accumulated significant experience in developing dynamic
-              and responsive user interfaces, ensuring an excellent user experience and optimal
-              application performance.
-            </p>
-
-            <p className="text-left font-semibold text-sm xl:text-base mt-3">
-              I strive to apply best development practices and continuously update my knowledge of
-              new technologies and tools
-            </p>
           </div>
           {/* =====Text===== */}
           <div className="w-full flex items-center justify-center lg:justify-start ">
